@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Astrobotic's Interactive Lab</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    	  	<div id="light_status">
+	  	  		<div id="lightvalue"></div>
+			</div>	
+  </head>  			
+
+  <body>
+  	<div style="margin:0px 5px 0px 5px">
+  		<img alt="Astrobotic-173" src="/images/astrobotic-173.png?1318993818" width="400" />
+  	</div>
+  	<div style="margin:0px 6px 0px 6px;background :blue">
+  		<p style="background-color:#E72F25; color:#E72F25">placeholder</font></p>
+  	</div>
+  	<div style="margin:0px 6px 0px 6px">
+  		<p style="font-family:Arial, Helvetica, sans-serif; font-size:18px">
+  		Welcome to Astrobotic's Interactive Lab!<br>
+  		<!--We're streaming live from the Planetary Robotics Highbay in Carnegie Mellon University.
+  		Swing by from time; we promise you that cool things happen around here from time to time.
+  		After all, having a lunar rover and lander in the same room is not something you see everyday, is it?-->
+  		</p>
+  	</div>
+  	<table>
+  	<tr>	
+		<td>
+			<div id="temp" style="margin:0px 24px 0px 24px">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?0W5zd4QR5OvD' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>			
+		</td>	  
+		<td rowspan="2" align="left" style="vertical-align:top">
+  			<div id="container">
+					<video src="movie.MOV" type="video/quicktime" controls> This browser does not support HTML5 video</video>
+				</div>
+  		</td>	
+  		<td>
+		
+			<div id="tempChart">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?u3jBQGnQsaru' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>	
+		</td>	
+  	</tr>
+  	<tr>
+  		<td>
+	  		<div id="humidity" style="margin:0px 24px 0px 24px">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?Aj8wmSd6EtXT' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+	  	</td>
+
+	    <td>
+	  		<div id="humidityChart">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?oanTarB2nhqg' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+	  	</td>
+
+  	</tr>
+  	<tr>
+  		<td></td>
+  		<td align="left" style="vertical-align:top">
+  			<br><br>
+  		  	<div id="disqus_thread"></div>
+			<div id="disqus">
+				<script type="text/javascript">
+				    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				    var disqus_shortname = 'robotics'; // required: replace example with your forum shortname
+				
+				    /* * * DON'T EDIT BELOW THIS LINE * * */
+				    (function() {
+				        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				    })();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div>
+  		</td>	
+  		<td align="right" style="vertical-align:top">
+  			<br><br>
+		  	<script type="text/javascript" language="javascript">
+				/* widget config */
+			    var jtw_divname                = 'jtw_widget1';
+			    var jtw_search                 = '"Astrobotic" OR "XPrize"';
+			    var jtw_width                  = '350px';
+			    var jtw_height                 = '600px';
+			    var jtw_scroll                 = 'no';
+			    var jtw_widget_background      = '#FFFFFF';
+			    var jtw_widget_border          = '0px solid #FFFFFF';
+			    var jtw_center_widget          = 'yes';
+			
+			    /* tweet styling */
+			    var jtw_tweet_textcolor        = '';
+			    var jtw_tweet_linkcolor  	   = "#E72F25";
+			    var jtw_tweet_background       = 'url(./img/greygrad.png) repeat-x #fff';
+			    var jtw_tweet_newbackground    = '#ffe';
+			    var jtw_tweet_border           = '1px solid #FFFFFF';
+			    var jtw_tweet_margin           = '8px';
+			    var jtw_tweet_fontsize         = '12px';
+			    var jtw_big_img                = 'no';  /* display big avatar instead of small avatar */
+
+			
+			    /* search and display config */
+			    var jtw_pre_html               = '<center><b>What\'s new</b></center>';
+			    var jtw_post_html              = '';
+			    var jtw_mid_html               = '<hr>';
+			    var jtw_num_tweets             = '10';
+			    var jtw_tweet_lang             = 'en';
+			    var jtw_widget_style_misc	   = 'font-family: Arial, Helvetica, sans-serif;';
+			    var jtw_widget_refresh_interval= 10;	
+			</script>
+			<script src="http://tweetgrid.com/widget/widget.js" type="text/javascript"></script> 
+  		</td>
+
+  	</tr>
+  	</table>  	
+  </body>
+</html>
+
+<html>
+<body>
+
+</body>
+</html>

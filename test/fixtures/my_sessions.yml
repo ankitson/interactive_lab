@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  session_id: MyString
+  time: 2011-11-04 10:21:39
+  ga_utma: MyString
+
+two:
+  session_id: MyString
+  time: 2011-11-04 10:21:39
+  ga_utma: MyString

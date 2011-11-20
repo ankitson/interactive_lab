@@ -1,0 +1,41 @@
+html, body
+{
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-size: 13px;
+  background: #222;
+  color: #fff;
+}
+
+#tf8
+{
+	font-size: 18px;
+}
+	
+#tf9, #tf10, #tf11
+{
+	font-size: 20px;
+}
+	
+.textfield 
+{
+  color: #fff;
+  width: 100%;
+	overflow: hidden;
+}
+
+.dud 
+{
+    color: #888;
+}
+
+#left 
+{
+	float:left;
+	width: 100%;
+}
+
+p::first-letter
+{
+	color: green;
+}

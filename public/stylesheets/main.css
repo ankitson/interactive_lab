@@ -1,0 +1,239 @@
+﻿/************************************************
+ * Title:Astrobotic's Interactive Lab
+ * Author: José H. Arriaga-Maldonado
+ * Date: November 11, 2011
+ ************************************************/
+
+/* Body
+ ************************************************/
+body {
+	background:#333333;
+	margin:0;
+	padding:0;
+	font:10px Helvetica,Arial,Sans-serif;
+	color:#444444;
+	}
+
+
+/* Links
+ ************************************************/
+a {
+	color:#E72F25;
+	text-decoration:underline;
+	}
+a strong {
+	color:#444444;
+	text-decoration:underline;
+	}
+
+/* Themes
+ *************************************************
+ * Red: #E72F25
+ * Soft gray: #DAD0C7
+ * Strong gray: #444444
+ ************************************************/
+#theme {
+	background:#DAD0C7;
+	width:auto;
+	padding-top:60px;
+	border-bottom:15px #E72F25 solid;
+	}
+#theme .head {
+	position:absolute;
+	width:auto;
+	height:80px;
+	margin:-80px 0px 0px 130px;
+	}
+#theme .logo {
+	background:url("../images/logo250x35.png") no-repeat 0 0;
+	position:relative;
+	display:block;
+	width:250px;
+	height:35px;
+	margin:30px 0 0 0;
+	}
+  
+  
+/* Tabs
+ ************************************************/
+#tab {
+	background:url('../images/tab_background.png') repeat 0 0;
+	height:35px;
+	position:relative;
+	z-index:1;
+	}
+#tab ul {
+	min-width:700px;
+	margin:0 92px;
+	}
+#tab li {
+	float:left;
+	width:125px;
+	margin:8px 0px 0px 0px;
+	list-style:none;
+	font-size:large;
+	text-indent:0;
+	text-transform:lowercase;
+	}  
+#tab a, 
+#tab strong {
+	display:block;
+	height:27px;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:large;
+	}
+#tab strong, 
+#tab .this a,
+#tab a:hover, 
+#tab a:focus {
+	color:#444444 !important;
+	} 
+#tab strong, 
+#tab .this a {
+	background:url("../images/tab_selector.png") no-repeat 0 100%;
+	}
+	
+	/* Control Panel
+ ************************************************/
+#panel {
+	margin:0px 20px 0px 35px;
+	bottom:0px;
+	background-color:#AEA69F;
+	border:10px #FFFFFF solid;
+	width:280px;	
+	height: 100%;	
+	}
+
+#panel .header {
+	margin:20px;
+	font-size:x-large;
+	color:#444444;
+	text-align:center;
+	font-weight:bold;
+	}
+
+#panel .message {
+	margin:15px 15px 15px 15px;
+	font-size:large;
+	color:#444444;
+	text-align:center;
+	font-weight:bold;
+	}
+	
+#panel .arrowup {
+	height:72px;
+	width:72px;
+	background:url("../images/arrow_up.png") no-repeat;
+	margin:0px 5px 0px 5px;
+	}
+	
+#panel .arrowup:active {	
+	height:72px;
+	width:72px;
+	background:url("../images/red_up.png") no-repeat;
+	margin:0px 5px 0px 5px;
+	}
+
+#panel .arrowleft {
+	height:72px;
+	width:72px;
+	background:url("../images/arrow_left.png") no-repeat;
+	margin:5px 0px 5px 5px;
+	}
+	
+#panel .arrowleft:active {	
+	height:72px;
+	width:72px;
+	background:url("../images/red_left.png") no-repeat;
+	margin:5px 0px 5px 5px;
+	}
+
+#panel .arrowdown {
+	height:72px;
+	width:72px;
+	background:url("../images/arrow_down.png") no-repeat;
+	margin:5px 5px 5px 5px;
+	}
+	
+#panel .arrowdown:active {	
+	height:72px;
+	width:72px;
+	background:url("../images/red_down.png") no-repeat;
+	margin:5px 5px 5px 5px;
+	}
+
+#panel .arrowright {
+	height:72px;
+	width:72px;
+	background:url("../images/arrow_right.png") no-repeat;
+	margin:5px 5px 5px 0px;
+	}
+	
+#panel .arrowright:active {	
+	height:72px;
+	width:72px;
+	background:url("../images/red_right.png") no-repeat;
+	margin:5px 5px 5px 0px;
+	}
+	
+#panel .title {	
+	width:154px;
+	font-size:large;
+	color:#444444;
+	text-align:left;
+	font-weight:bold;
+	margin:0px 0px 0px 5px;
+	vertical-align:bottom;
+	}
+	
+#panel .subtitle {	
+	width:154px;
+	font-size:large;
+	color:#444444;
+	text-align:left;
+	margin:0px 0px 0px 5px;
+	vertical-align:top;
+	}
+
+  
+  
+/* Video Controls
+ ************************************************/
+#video_container
+{
+	width:640px;
+	height:480px;
+	border:10px solid #DAD0C7;
+	overflow:hidden;
+	float: left;
+	margin-left: 130px;
+}
+
+/* Light Controls
+ ************************************************/
+#light_status{
+	/*
+	width: 500px;
+	height: 500px;
+	float: right;
+	background-repeat: no-repeat;
+	*/
+	width: 125px;
+	height: 125px;
+	margin-top: -10px;
+	margin-left: 1149px;
+	position: fixed;
+	}
+
+#tempChart
+{
+	width: 50%;
+}
+
+#humidityChart
+{
+	width: 50%;
+}
+

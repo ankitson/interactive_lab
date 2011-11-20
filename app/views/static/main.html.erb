@@ -1,0 +1,157 @@
+<div id="theme">
+  <div class="head">
+    <div class="logo"></div>
+	<b></b> 
+  </div>
+  <div id="tab">
+    <ul>
+      <li id="tab1" class="this"><strong>the lab</strong></li>
+      <li id="tab2"><a href="/social">social</a></li>
+      <li id="tab3"><a href="/milktruck/moon.html">games</a></li>
+      <li id="tab4"><a href="/about">about</a></li>
+      <li id="tab5"><a href="/contact">contact</a></li>
+    </ul>
+  </div>
+</div>
+<table style="margin:25px 0px 0px 0px">
+	<tr>
+		<td >
+			<div id="video_container">
+				<%= render :partial => 'video_feed' %>
+				<!-- NOTE! Video is laggy through an iframe, so the configuration JS code is now on the server. Hence, changing settings on robotics.linksyscam.com will not affect the video here. Workaround: Change settings on robotics.linksyscam.com and then copy over language.cgi, message.cgi, stdlib.js, ver_activex.js to public/javascripts and the inline JS on the video view page into video_feed.js -->
+			</div>
+		</td>
+		<td align="bottom">
+		<div id="panel">
+			<div class="header">
+			CONTROL PANEL 
+			</div>
+			<div>
+				<table style="margin:auto">
+					<tr align="center">
+						<td colspan="3">
+					  		<div class="arrowup"/>
+					  	</td>
+					</tr>
+					<tr align="center">
+						<td>
+					  		<div class="arrowleft"/>
+					  	</td>
+					  	<td>
+					  		<div class="arrowdown"/>
+					  	</td>
+					  	<td>
+					  		<div class="arrowright"/>
+					  	</td>
+					</tr>
+				</table>
+			</div>
+			<div style="margin:20px 0px 0px 0px">
+				<table style="margin:auto">
+					<tr align="center">
+						<td>
+					  		<div class="title">Ambient light</div>
+					  	</td>
+					  	<td rowspan="2">
+					  		<img src="../images/toggle_on.png" alt="toggle"/>
+					  	</td>
+					</tr>
+					<tr align="center">
+						<td>
+					  		<div class="subtitle">On</div>
+					  	</td>
+					</tr>
+				</table>
+			</div>
+			<div style="margin:20px 0px 30px 0px">
+				<table style="margin:auto">
+					<tr align="center">
+						<td>
+					  		<div class="title">Bubble rocket</div>
+					  	</td>
+					  	<td rowspan="2">
+					  		<img src="../images/toggle_off.png" alt="toggle"/>
+					  	</td>
+					</tr>
+					<tr align="center">
+						<td>
+					  		<div class="subtitle">Off</div>
+					  	</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		</td>
+	</tr>
+
+	<tr>
+	<td style="width: 50%;">
+		<div id="temp">
+			<script type="text/javascript">document.write(unescape("%3Cdiv id=%22tempChart%22%20class=%22charts%22%3E%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?u3jBQGnQsaru' type='text/javascript'%3E%3C/script%3E%3C%2Fdiv%3E"));</script>
+		</div>	
+	</td>	
+	<td style="width: 50%;">
+		<div id="humidity">
+			<script type="text/javascript">document.write(unescape("%3Cdiv id=%22humidityChart%22%20class=%22charts%22%3E%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?oanTarB2nhqg' type='text/javascript'%3E%3C/script%3E%3C%2Fdiv%3E"));</script>
+		</div>
+	</td>
+	</tr>
+</table>
+
+  
+ 
+<!--<div id="turn_buttons">
+	<table align="center">
+	<tr>
+		<td>
+			<div id="turn_left" style="margin:0px 12px 0px 12px">
+				<img border="0" alt="Turn Launcher Left" src= "images/Left.png" width="80" height="80" />
+			</div>
+		</td>
+		
+		<td>
+			<div id="turn_right" style="margin:0px 12px 0px 12px">
+				<img border="0" alt="Turn Launcher Right" src= "images/Right.png" width="80" height="80" />
+			</div>
+		</td>
+		
+		<td>
+			<div id="turn_up" style="margin:0px 12px 0px 12px">
+				<img border="0" alt="Turn Launcher Up" src= "images/Up.png" width="80" height="80" />
+			</div>
+		</td>
+		
+		<td>
+			<div id="turn_down" style="margin:0px 12px 0px 12px">
+				<img border="0" alt="Turn Launcher Down" src= "images/Down.png" width="80" height="80" />
+			</div>
+		</td>	
+	</tr>
+		
+	<tr>
+		<td align="center" colspan="4">
+			<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?aEFW7f0gplue' type='text/javascript'%3E%3C/script%3E"));</script>
+
+			<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?OXO0Q9H2yXME' type='text/javascript'%3E%3C/script%3E"));</script>
+		</td>
+	</tr>	
+	</table>-->
+</div>
+			
+<br><br>
+<table>
+	<tr>
+		<td align="left" style="vertical-align:top">
+			<div id="disqus">
+				<%= render :partial => 'disqus' %>
+			</div>
+		</td>
+			
+  	<td align="right" style="vertical-align:top">
+  		<div id="tweetgrid">
+  			<%= render :partial => 'tweetgrid' %>
+  		</div>
+		</td>
+  </tr>
+</table>

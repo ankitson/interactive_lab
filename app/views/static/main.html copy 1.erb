@@ -1,0 +1,196 @@
+<div style="margin:0px 5px 0px 5px">
+	<%= image_tag 'astrobotic-173.png', :width => '400' %>
+</div>
+
+<body id="home">
+<div id="theme">
+  <div class="head">
+    <div class="logo"></div>
+	<b></b> 
+  </div>
+  <div id="tab">
+    <ul>
+      <li id="tab1" class="this"><strong>the lab</strong></li>
+      <li id="tab2"><a href="/social">social</a></li>
+      <li id="tab3"><a href="/games">games</a></li>
+      <li id="tab4"><a href="/about">about</a></li>
+      <li id="tab5"><a href="/contact">contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div style="margin:0px 6px 0px 6px;background :#E72F25">
+	<p style="background-color:#E72F25; color:#E72F25">placeholder</p>
+</div>
+
+	<%#= @val %>
+	<%#= MySession.all.inspect %>
+<div style="margin:0px 6px 0px 6px">
+  <p style="font-family:Arial, Helvetica, sans-serif; font-size:18px">
+  	<b>Bienvenidos al Laboratorio Interactivo de Astrobotic Technology</b><br>
+       Estamos conectados en vivo al Laboratorio de Robótica Planetaria de Carnegie Mellon University.
+       Queremos agradecer a los alumnos e instructores de Mini-Robótica para Adolescentes por acompañarnos hoy aquí.
+       Los invitamos a darse la vuelta en este sitio web de vez en cuando; les prometemos que muchas cosas interesantes
+       pasan por aquí todo el tiempo. Después de todo, tener un rover espacial y un aterrizador lunar en el mismo lugar
+       no son cosas de todos días.
+  		<!--We're streaming live from the Planetary Robotics Highbay in Carnegie Mellon University.
+  		Swing by from time; we promise you that cool things happen around here from time to time.
+  		After all, having a lunar rover and lander in the same room is not something you see everyday, is it?-->
+  </p>
+</div>
+
+<table>
+	<tr>	
+		<td>
+			<div id="temp" style="margin:0px 24px 0px 24px">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?0W5zd4QR5OvD' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+		</td>	  
+		<td rowspan="2" align="left" style="vertical-align:top">
+  			<div id="video_container">
+						<!-- <iframe src="http://robotics.linksyscam.com/img/video.mjpeg"
+						scrolling="no" style="width: 640px; height: 480px;"></iframe> -->
+						<%= render :partial => 'video_feed' %>
+						<!-- NOTE! Video is laggy through an iframe, so the configuration JS code is now on the server. Hence, changing settings 
+						on robotics.linksyscam.com will not affect the video here. Workaround: Change settings on robotics.linksyscam.com and then
+						copy over language.cgi, message.cgi, stdlib.js, ver_activex.js to public/javascripts and the inline JS on the video
+						view page into video_feed.js -->
+				</div>
+  	</td>	
+  	
+  	<td>
+			<div id="tempChart">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?u3jBQGnQsaru' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>	
+		</td>	
+  </tr>
+  	
+  <tr>
+  	<td>
+	  	<div id="humidity" style="margin:0px 24px 0px 24px">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?Aj8wmSd6EtXT' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+	  </td>
+
+	  <td>
+	  	<div id="humidityChart">
+				<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?oanTarB2nhqg' type='text/javascript'%3E%3C/script%3E"));</script>
+				<!--<form action="https://www.iobridge.com/widgets/static" method="post"> 
+          <textarea row="2" cols="16" id="value" name="value"></textarea><br />
+          <input type="hidden" name="id" value="oanTarB2nhqg" />       
+          <input type="submit" value="Submit" />          
+        </form> -->
+        
+			</div>
+	  </td>
+  </tr>
+  
+  <tr>
+  	<td></td>
+  	<td align="left" style="vertical-align:top">
+			<div id="turn_buttons">
+				
+<!--div id="io_uz2ORyR5x4Mp"><input type="text" id="ioInput_uz2ORyR5x4Mp" size="8" value="1200" onkeypress="if (event.keyCode==13) {DI(&#39;https://www.iobridge.com/interface/?actionID=RM_SdB8iOGlLqvJ&sessionID=6MABKCDANS56UIE3R5GT&#39;, &#39;uz2ORyR5x4Mp&#39;); return false;}"> <span id="ioData_uz2ORyR5x4Mp" onMouseover="this.style.background=&#39;#E3F6CE&#39;" onMouseout="this.style.background=&#39;transparent&#39;" style="cursor: pointer; border:solid 1px #9acc53; padding-left:2px; padding-right:2px;" onclick="DI(&#39;https://www.iobridge.com/interface/?actionID=RM_SdB8iOGlLqvJ&sessionID=6MABKCDANS56UIE3R5GT&#39;, &#39;uz2ORyR5x4Mp&#39;); return false;" title="Click to send servo position [ioBridge.com]">Set</span>                             </div>-->
+				<input type="hidden" id="session_id" value="" />
+				<form>
+					<table align="center">
+						<tr>
+							<td>
+								<div id="turn_left" style="margin:0px 12px 0px 12px">
+									<!--<a onclick="moveX('uz2ORyR5x4Mp', 'CW', '100')">--><img border="0" alt="Turn Launcher Left" src= "images/Left.png" width="80" height="80" /><!--</a>-->
+								</div>
+							</td>
+							<td>
+								<div id="turn_right" style="margin:0px 12px 0px 12px">
+									<!--<a onclick="moveX('uz2ORyR5x4Mp', 'CCW', '40')">--><img border="0" alt="Turn Launcher Right" src= "images/Right.png" width="80" height="80" /><!--</a>-->
+								</div>
+							</td>
+							<td>
+								<div id="turn_up" style="margin:0px 12px 0px 12px">
+									<!--<a onclick="moveY('omCjPwzHOI9b', 'CCW', '100')">--><img border="0" alt="Turn Launcher Up" src= "images/Up.png" width="80" height="80" /><!--</a>-->
+								</div>
+							</td>
+							<td>
+								<div id="turn_down" style="margin:0px 12px 0px 12px">
+									<!--<a onclick="moveY('omCjPwzHOI9b', 'CW', '40')">--><img border="0" alt="Turn Launcher Down" src= "images/Down.png" width="80" height="80" /><!--</a>-->
+								</div>
+							</td>
+						</tr>
+						
+								<script type="text/javascript">
+	               	$('#turn_left').mousedown(function()
+	                {
+	                    interval = setInterval( function () { moveX('uz2ORyR5x4Mp', 'CW', '20') }, 150);
+	                }).mouseup(function()
+	                {
+	                    clearInterval(interval);
+              		});
+              		
+              		$('#turn_right').mousedown(function()
+	                {
+	                    interval = setInterval( function () { moveX('uz2ORyR5x4Mp', 'CCW', '20') }, 150);
+	                }).mouseup(function()
+	                {
+	                    clearInterval(interval);
+              		});
+              		
+              		$('#turn_up').mousedown(function()
+	                {
+	                    interval = setInterval( function () { moveY('omCjPwzHOI9b', 'CCW', '100') }, 150);
+	                }).mouseup(function()
+	                {
+	                    clearInterval(interval);
+              		});
+              		
+              		$('#turn_down').mousedown(function()
+	                {
+	                    interval = setInterval( function () { moveY('omCjPwzHOI9b', 'CW', '40') }, 150);
+	                }).mouseup(function()
+	                {
+	                    clearInterval(interval);
+              		});
+								</script>	
+						
+						<tr>
+							<td align="center" colspan="4">
+
+							<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?aEFW7f0gplue' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+							<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?OXO0Q9H2yXME' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			
+  		<br><br>
+			<div style="margin:0px 6px 0px 6px">
+  		 	<p style="font-family:Arial, Helvetica, sans-serif; font-size:18px">
+  		  	<b>Los invitamos a que revisen el siguiente vínculo y participen conduciendo un rover espacial en la Luna ustedes mismos:</b><br>
+          <a href="LunarRover.htm">Hagan click aquí.</a>
+  		  </p>            
+  		</div>
+      <br><br><br>
+      
+			<div id="disqus">
+				<%= render :partial => 'disqus' %>
+			</div>
+		</td>
+			
+  	<td align="right" style="vertical-align:top">
+  		<br><br>
+  		<%= render :partial => 'tweetgrid' %>
+		</td>
+
+  </tr>
+</table>
+
+<div id="ioWidgets" style="">
+	<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?uz2ORyR5x4Mp' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?aEFW7f0gplue' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?omCjPwzHOI9b' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
