@@ -13,6 +13,15 @@ body {
 	font:10px Helvetica,Arial,Sans-serif;
 	color:#444444;
 	}
+	
+/* About Page
+ ************************************************/
+.aboutDescription{
+	font-size: 18px;
+	color: #FFFFFF;
+	width: 800px;
+	padding-left: 100px;
+}
 
 
 /* Links
@@ -227,13 +236,4 @@ a strong {
 	position: fixed;
 	}
 
-#tempChart
-{
-	width: 50%;
-}
-
-#humidityChart
-{
-	width: 50%;
-}
 

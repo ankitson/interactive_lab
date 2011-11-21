@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<%= stylesheet_link_tag 'main.css' %>
+<title>Social</title>
+</head>
+
+<body id="home">
+<div id="theme">
+  <div class="head">
+    <div class="logo"></div>
+	<b></b> 
+  </div>
+  <div id="tab">
+    <ul>
+      <li id="tab1"><a href="/">the lab</a></li>
+      <li id="tab2" class="this"><strong>social</strong></li>
+      <li id="tab3"><a href="/milktruck/moon.html">games</a></li>
+      <li id="tab4"><a href="/about.html">about</a></li>
+      <li id="tab5"><a href="/contact.html">contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<table>
+	<tr>
+		<td align="left" style="vertical-align:top">
+			<div id="disqus">
+				<%= render :partial => 'disqus' %>
+			</div>
+		</td>
+			
+  	<td align="right" style="vertical-align:top">
+  		<div id="tweetgrid">
+  			<%= render :partial => 'tweetgrid' %>
+  		</div>
+		</td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>
+
+

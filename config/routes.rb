@@ -1,5 +1,8 @@
 Robotics::Application.routes.draw do
   get "static/main"
+  
+  match "social" => 'static#social'
+  match "about" => 'static#about'
   match "init" => 'static#init'
   match "join" => 'static#join_queue'
   match "first" => 'static#is_first_in_queue?'

@@ -27,53 +27,11 @@ function refreshLightStatus() {
 var refreshId = setInterval(refreshLightStatus , 10000);
 refreshLightStatus();
 
-$(document).ready( function() {
-
-$('#turn_left').mousedown(function()
-{
-    interval = setInterval( function () { moveX('uz2ORyR5x4Mp', 'CW', '20'); }, 150);
-}).mouseup(function()
-{
-    clearInterval(interval);
-});
-
-$('#turn_right').mousedown(function()
-{
-    interval = setInterval( function () { moveX('uz2ORyR5x4Mp', 'CCW', '20'); }, 150);
-}).mouseup(function()
-{
-    clearInterval(interval);
-});
-
-$('#turn_up').mousedown(function()
-{
-    interval = setInterval( function () { moveY('omCjPwzHOI9b', 'CCW', '100'); }, 150);
-}).mouseup(function()
-{
-    clearInterval(interval);
-});
-
-$('#turn_down').mousedown(function()
-{
-    interval = setInterval( function () { moveY('omCjPwzHOI9b', 'CW', '40'); }, 150);
-}).mouseup(function()
-{
-    clearInterval(interval);
-});
-
-});
-
 
 function moveX(widgetID, direction, distance)
 {
-	console.log("MOVEX");
   distance = parseInt(distance);
-  console.log("MOVEX distance: "+distance);
-  console.log("WIDGET iD: "+widgetID);
-  console.log("widgetGetString "+widgetGetString);
-  console.log("widgetGetString(widgetID) "+widgetGetString(widgetID));
   current = parseInt(widgetGetString(widgetID));
-  console.log("MOVEX current: "+current);
 
   if (direction == "CCW") {
        distance = current-distance;
