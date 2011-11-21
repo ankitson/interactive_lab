@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<%= render :partial => 'google_analytics.html.erb' %>
 <%= stylesheet_link_tag 'main.css' %>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>About</title>
 </head>
 
-<body id="home" style="margin: -13px 0 0 0;">
+<body id="home">
 <div id="theme">
   <div class="head">
     <div class="logo"></div>
@@ -25,7 +26,7 @@
 </div>
 
 <div class= "aboutDescription">
-	This website was created by three students in Red Wittaker's Mobile Robotics
+	This website was created by three students in Red Whittaker's Mobile Robotics
 	Fall Semester 2011 course. We were tasked with creating an interface to
 	facilitate public interaction with our laboratory while educating
 	anyone interested in the competition for the Google Lunar X Prize. </br>
