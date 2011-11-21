@@ -50,10 +50,10 @@
 				<table style="margin:auto">
 					<tr align="center">
 						<td>
-					  		<div class="title">Ambient light</div>
+					  		<div class="title">Spotlight</div>
 					  	</td>
 					  	<td rowspan="2">
-					  		<img src="../images/toggle_on.png" alt="toggle"/>
+					      <img src="../images/toggle_on.png" alt="toggle" onclick="lightOn();"/>
 					  	</td>
 					</tr>
 					<tr align="center">
@@ -67,7 +67,7 @@
 				<table style="margin:auto">
 					<tr align="center">
 						<td>
-					  		<div class="title">Bubble rocket</div>
+					  		<div class="title">Bubble Rocket!</div>
 					  	</td>
 					  	<td rowspan="2">
 					  		<img src="../images/toggle_off.png" alt="toggle"/>
@@ -99,7 +99,21 @@
 	</tr>
 </table>
 
-  
+
+<!--This code needs to be on the page to control widgets, even though it is not used directly-->
+<div id="ioWidgets" style="display:none">
+  <script type="text/javascript"> <!--Servo X-Axis-->
+  document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?uz2ORyR5x4Mp' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript"> <!--Servo Y-Axis-->
+  document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?omCjPwzHOI9b' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript"> <!--Spotlight-->
+  document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?OXO0Q9H2yXME' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+</div>
+
+
  
 <!--<div id="turn_buttons">
 	<table align="center">
@@ -136,8 +150,8 @@
 			<script type="text/javascript">document.write(unescape("%3Cscript src='" + "http://www.iobridge.com/widgets/io.js?OXO0Q9H2yXME' type='text/javascript'%3E%3C/script%3E"));</script>
 		</td>
 	</tr>	
-	</table>-->
-</div>
+	</table>
+</div>-->
 			
 <!--<br><br>
 <table>
