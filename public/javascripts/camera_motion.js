@@ -36,15 +36,17 @@ $('#turn_down').mousedown(function()
 
 function lightOn()
 {
-  jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME&state=0", function(data) { console.log("RECEIVED: "+data); });
+  jQuery.get("http://www.iobridge.com/widgets/static/id=OXO0Q9H2yXME&value=0");
+  //jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME&state=0", function(data) { console.log("RECEIVED: "+data); });
 }
 
 function lightOff()
 {
-  jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME&state=1", function(data) { console.log("RECEIVED: "+data); });
+	jQuery.get("http://www.iobridge.com/widgets/static/id=OXO0Q9H2yXME&value=1");
+  //jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME&state=1", function(data) { console.log("RECEIVED: "+data); });
 }
 
 function lightState()
 {
-	jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME", function(data) { console.log("RECEIVED: "+data); });
+	//jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME", function(data) { console.log("RECEIVED: "+data); });
 }
