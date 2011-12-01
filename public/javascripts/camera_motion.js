@@ -36,7 +36,12 @@ $('#turn_down').mousedown(function()
 
 function lightOn()
 {
-  jQuery.getJSON("http://www.iobridge.com/widgets/static/id=OXO0Q9H2yXME&value=0&format=json&callback=?", function(json) { alert(json.value); });
+  jQuery.getJSON("http://www.iobridge.com/widgets/static/id=OXO0Q9H2yXME&value=0&format=json&callback=?", function(json) { 
+  	var output = '';
+	for (property in object) {
+  		output += property + ': ' + object[property]+'; ';
+	}
+	alert(output);});
   //jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME&state=0", function(data) { console.log("RECEIVED: "+data); });
 }
 
