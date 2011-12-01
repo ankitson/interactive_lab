@@ -17,6 +17,7 @@ Robotics::Application.routes.draw do
   match "togglepumpkinstate" => 'static#togglePumpkinState'
   match "setstate" => 'static#setState'
   match "setvalue" => 'static#setValue'
+  match "getx" => 'static#getX"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
