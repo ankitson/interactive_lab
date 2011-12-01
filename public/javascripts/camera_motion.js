@@ -38,8 +38,8 @@ function lightOn()
 {
   jQuery.getJSON("http://www.iobridge.com/widgets/static/id=OXO0Q9H2yXME&value=0&format=json&callback=?", function(json) { 
   	var output = '';
-	for (property in object) {
-  		output += property + ': ' + object[property]+'; ';
+	for (property in json) {
+  		output += property + ': ' + json[property]+'; ';
 	}
 	alert(output);});
   //jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME&state=0", function(data) { console.log("RECEIVED: "+data); });
