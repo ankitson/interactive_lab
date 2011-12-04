@@ -50,3 +50,18 @@ function lightState()
 {
 	//jQuery.get("http://interactivelab.astrobotic.net/iobridge-proxy.php?widgetID=OXO0Q9H2yXME", function(data) { console.log("RECEIVED: "+data); });
 }
+
+function BubbleGun1(){
+
+ widgetExecute('UMVH2C5rT0A2');
+ widgetExecute('4EpL2Ivl6MjZ');
+
+ setTimeout(BubbleGun2,2000);
+
+}
+
+function BubbleGun2(){
+
+ widgetExecute('OPSvhTDEFyCz');
+
+}
