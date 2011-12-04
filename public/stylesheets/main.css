@@ -238,53 +238,43 @@ a strong {
 
 #panel .onbutton {
        height:48px;
-       width:96px;
+       width:95px;
        background:url("../images/On_Black.png") no-repeat;
-       margin:5px 5px 5px 20px;
+       margin:auto;
        }
 
 #panel .onbutton:active {
        height:48px;
-       width:96px;
+       width:95px;
        background:url("../images/On_Red.png") no-repeat;
-       margin:5px 5px 5px 20px;
+       margin:auto;
        }
 
 #panel .offbutton {
        height:48px;
-       width:96px;
+       width:95px;
        background:url("../images/Off_Black.png") no-repeat;
-       margin:5px 5px 5px 33px;
+       margin:auto;
        }
 
 #panel .offbutton:active {
        height:48px;
-       width:96px;
+       width:95px;
        background:url("../images/Off_Red.png") no-repeat;
-       margin:5px 5px 5px 33px;
+       margin:auto;
        }
 
 #panel .launchbutton {
        height:48px;
        width:234px;
        background:url("../images/Launch_Black.png") no-repeat;
-       margin:5px 5px 30px 20px;
+       margin:auto auto 30px auto;
        }
 
 #panel .launchbutton:active {
        height:48px;
        width:234px;
        background:url("../images/Launch_Red.png") no-repeat;
-       margin:5px 5px 30px 20px;
-       }
-
-#panel .title {
-       width:154px;
-       font-size:large;
-       color:#444444;
-       text-align:left;
-       font-weight:bold;
-       margin:0px 0px 0px 24px;
-       vertical-align:bottom;
+       margin:auto auto 30px auto;
        }
 
