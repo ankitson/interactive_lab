@@ -1,0 +1,45 @@
+"the lab"
+"social"
+"games"
+"about"
+"contact"
+"CONTROL PANEL"
+"Spotlight"
+"Bubble Rocket"
+We need buttons on the control panel that replace "ON", "OFF" and "LAUNCH" with the Spanish version
+"Temperature"
+"Humidity"
+"Time"
+
+From the game:
+"We've got core samples to collect!",
+"Hello?",
+"Dude, <font color=red><i>step on it!</i></font>",
+"Houston's waiting!",
+"We've got craters to hurdle!",
+"Zzzzzzz"
+"Whoah there, cowboy!"
+"Wheeeeeeeeee!"
+"<font size=+5 color=#8080FF>ROCKY!</font>",
+"Hey, we're hauling moon rocks here!"
+
+The whole about page:
+"
+This website was created by three students in Red Whittaker's Mobile Robotics Fall Semester 2011 course. We were tasked with creating an interface to facilitate public interaction with our laboratory while educating anyone interested in the competition for the Google Lunar X Prize. 
+
+Features: 
+
+Lab Camera: A webcam is mounted on a pan/tilt servo mount allowing for the viewing of our Lunar High Bay. This is our primary work are for our lunar lander and lunar rover in addition to other large scale robots. Take a look and who knows what you may find! 
+
+Live Data: We stream live data from our lab to demonstrate a preview of our live data stream from the moon. Educating the public is extremely important to us. Although currently you are only seeing data from Pittsburgh, future students will use a similar technique in the future to transmit and display much more unearthly data. 
+
+Lunar Rover Simulation: Our lunar rover simulator is powered by Google's lunar landscape simulator and allows users to simulate what it is like driving our rover on the lunar surface. Check out other famous landings and see what other places you can find!
+
+Social Media: Follow Astrobotic on twitter and get automatic notifications whenever we are in the lab working on a project. Ask us questions on our Social Media page and get answers from leading professionals in the field of interplanetary robotics.
+"
+
+"Email"
+"Phone"
+"Address"
+"Join our mailing list"
+"Follow us"
