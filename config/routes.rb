@@ -1,6 +1,10 @@
 Robotics::Application.routes.draw do
   get "static/main"
   
+  match "social_es" => 'static#social_es'
+  match "about_es" => 'static#about_es'
+  match "main_es" => 'static#main_es"
+  
   match "social" => 'static#social'
   match "about" => 'static#about'
   match "init" => 'static#init'
