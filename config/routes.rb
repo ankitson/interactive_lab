@@ -3,7 +3,7 @@ Robotics::Application.routes.draw do
   
   match "social_es" => 'static#social_es'
   match "about_es" => 'static#about_es'
-  match "main_es" => 'static#main_es"
+  match "main_es" => 'static#main_es'
   
   match "social" => 'static#social'
   match "about" => 'static#about'
