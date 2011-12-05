@@ -61,7 +61,14 @@ a strong {
 	height:35px;
 	margin:30px 0 0 0;
 	}
-  
+
+#theme .english {
+	background:url("../images/english.png") no-repeat 0 0;
+	}
+
+#theme .spanish {
+	background: url("../images/spanish.png") no-repeat 0 0;
+	}
   
 /* Tabs
  ************************************************/
