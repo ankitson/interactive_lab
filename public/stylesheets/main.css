@@ -64,10 +64,16 @@ a strong {
 
 #theme .english {
 	background:url("../images/english.png") no-repeat 0 0;
+	float: right;
+	width: 64px;
+	height: 64px;
 	}
 
 #theme .spanish {
 	background: url("../images/spanish.png") no-repeat 0 0;
+	float: right;
+	width: 64px;
+	height: 64px;
 	}
   
 /* Tabs
