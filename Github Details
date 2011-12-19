@@ -1,0 +1,4 @@
+This project is hosted on Github at
+https://github.com/Ankit1010/interactive_lab
+
+If you continue to use a Github repo for the project, deployment on Engine Yard becomes a lot quicker so you can keep iterating constantly. You should fork the repo above into your own Github account, and change the path in the EngineYard account to use that repo to continue developing.
